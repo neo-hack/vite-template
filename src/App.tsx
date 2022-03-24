@@ -1,7 +1,7 @@
 import React from 'react'
 import { RouteObject, useRoutes, BrowserRouter } from 'react-router-dom'
 
-import * as styles from './App.css'
+import { ThemeProvider } from '@/styles/theme'
 import NotFound from './pages/not-found'
 
 const Demo = React.lazy(() => import('@/pages/demo'))
@@ -29,13 +29,13 @@ const Routes = () => {
 
 function App() {
   return (
-    <div className={styles.App}>
+    <ThemeProvider>
       <BrowserRouter>
         <React.Suspense fallback={<div>loading...</div>}>
           <Routes />
         </React.Suspense>
       </BrowserRouter>
-    </div>
+    </ThemeProvider>
   )
 }
 
