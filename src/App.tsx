@@ -4,11 +4,20 @@ import routes from '~react-pages'
 
 import { ThemeProvider } from '@/styles/theme'
 
+console.log(routes)
+
+const Routes = () => {
+  const elements = useRoutes(routes)
+  return elements
+}
+
 function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <React.Suspense fallback={<div>loading...</div>}>{useRoutes(routes)}</React.Suspense>
+        <React.Suspense fallback={<div>loading...</div>}>
+          <Routes />
+        </React.Suspense>
       </BrowserRouter>
     </ThemeProvider>
   )
