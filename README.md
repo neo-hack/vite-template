@@ -9,6 +9,7 @@
 ## features
 
 - 💞 Play with `stitches` and `tailwindcss`
+- 🗄️ Filed based route system with [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages)
 
 ## development
 
