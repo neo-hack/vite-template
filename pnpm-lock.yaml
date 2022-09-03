@@ -25,7 +25,7 @@ specifiers:
   tailwindcss: 3.1.8
   typescript: ^4.8.2
   vite: ^3.0.9
-  vite-plugin-document: ^0.0.1
+  vite-plugin-document: ^0.0.2
   vite-plugin-pages: ^0.26.0
 
 dependencies:
@@ -55,7 +55,7 @@ devDependencies:
   prettier: 2.7.1
   typescript: 4.8.2
   vite: 3.0.9
-  vite-plugin-document: 0.0.1_fnamina7vdxbjtahfo6sjvrgea
+  vite-plugin-document: 0.0.2_fnamina7vdxbjtahfo6sjvrgea
   vite-plugin-pages: 0.26.0_vite@3.0.9
 
 packages:
@@ -4525,8 +4525,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-document/0.0.1_fnamina7vdxbjtahfo6sjvrgea:
-    resolution: {integrity: sha512-G7njT/cDuQh9MuxoFlHzgG6BUwsB+CWMwrZugen5nVCsifSF89bgokZNQ+m8Ra9lNZtxq1JRHpGXj0Q5Kxrz+A==}
+  /vite-plugin-document/0.0.2_fnamina7vdxbjtahfo6sjvrgea:
+    resolution: {integrity: sha512-vBNeIQGkTirW/rfI7H3/4DekzMx2hmj9sL9du+jz9Pe8xHadZbWLfGGDgD6UY3KPY9uYGIW87KtvDNmOkNfpmg==}
     peerDependencies:
       react-dom: '>=18'
       vite: '>=3'
