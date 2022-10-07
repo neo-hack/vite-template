@@ -1,5 +1,11 @@
 # @aiou/vite-template
 
+## 0.1.1
+
+### Patch Changes
+
+- a29abaa: upgrade vite-plugin-document, fix not-working-with-react-router
+
 ## 0.1.0
 
 ### Minor Changes
