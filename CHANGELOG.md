@@ -1,5 +1,11 @@
 # @aiou/vite-template
 
+## 0.1.2
+
+### Patch Changes
+
+- f86d1e9: add vite-plugin-inspect
+
 ## 0.1.1
 
 ### Patch Changes
