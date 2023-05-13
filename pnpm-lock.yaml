@@ -4,7 +4,9 @@ specifiers:
   '@aiou/eslint-config': ^0.10.0
   '@changesets/cli': ^2.24.4
   '@stitches/react': 1.2.8
+  '@svgr-rs/svgrs-plugin': ^0.1.0
   '@tailwindcss/typography': 0.5.7
+  '@types/node': ^20.1.3
   '@types/react': ^18.0.18
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.1
@@ -43,6 +45,8 @@ dependencies:
 devDependencies:
   '@aiou/eslint-config': 0.10.0_44zvehbvw2ohz2ouqnouspicdy
   '@changesets/cli': 2.24.4
+  '@svgr-rs/svgrs-plugin': 0.1.0_vite@3.2.4
+  '@types/node': 20.1.3
   '@types/react': 18.0.18
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.0.1_vite@3.2.4
@@ -55,7 +59,7 @@ devDependencies:
   prettier: 2.7.1
   tailwind-cssgg: 0.0.1_tailwindcss@3.1.8
   typescript: 4.4.4
-  vite: 3.2.4
+  vite: 3.2.4_@types+node@20.1.3
   vite-plugin-document: 0.1.1_skcemaoe7zhmblpqf3twtjo3ja
   vite-plugin-inspect: 0.7.9_vite@3.2.4
   vite-plugin-pages: 0.26.0_vite@3.2.4
@@ -800,6 +804,80 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@svgr-rs/core-darwin-arm64/0.0.8:
+    resolution: {integrity: sha512-KwYMglCLR+xpJlQfWa1bNoPBvi3kv6P2ZE/HvqGFEwrILK68Z5UD8dZ41Tb7p3JT7uO4D1tMmp5ziHD8Krxgqw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@svgr-rs/core-darwin-universal/0.0.8:
+    resolution: {integrity: sha512-kwNeeKVk0pudpG/fs0DgjQCClW/HqMOW004DSM0hSD82lKJtCX7NLjVIqx56RqIy6RVlx2grh6rKW7cCyts9Xw==}
+    engines: {node: '>= 10'}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@svgr-rs/core-darwin-x64/0.0.8:
+    resolution: {integrity: sha512-WEptKFE0xrvC3XMC3xYKYMXYi8N2lp16oQtyoC19Kb4Nob26Lk+jZOW+b3NbyexJgFTu7cm0x00sEREhYVEm8A==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@svgr-rs/core-win32-arm64-msvc/0.0.8:
+    resolution: {integrity: sha512-pKOpengtbbkLDncaoYAxh/HGOig08SZSgcAMtpW7lm+Do2VmcKtjMS3SJISWg8U69katNUUCm6i9xEHYueErew==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@svgr-rs/core-win32-x64-msvc/0.0.8:
+    resolution: {integrity: sha512-cvSEChajA+UsXcvgVoxQwgawHiIXZzo6TO7Af3WsbdF12In3XmHreUjzvZbj9BoJEG4s5yKyEWtZvVD4CMoxJw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@svgr-rs/core/0.0.8:
+    resolution: {integrity: sha512-9YpE/qPRG+aD9EElTQ8C/OWIwuQS3mPMbzk8lwpLy4wOcSZr/1naEPkMUiHvFZaaCbInA2Y/8fBE7oyIPbpWzA==}
+    engines: {node: '>= 10'}
+    optionalDependencies:
+      '@svgr-rs/core-darwin-arm64': 0.0.8
+      '@svgr-rs/core-darwin-universal': 0.0.8
+      '@svgr-rs/core-darwin-x64': 0.0.8
+      '@svgr-rs/core-win32-arm64-msvc': 0.0.8
+      '@svgr-rs/core-win32-x64-msvc': 0.0.8
+    dev: true
+
+  /@svgr-rs/svgrs-plugin/0.1.0_vite@3.2.4:
+    resolution: {integrity: sha512-+vgEw3cpQUBSPpC+2YdgfK8W8xbLsvQb+xASD+xhPKwA9Qjudi32JvZzuc5Oec9L+6013xDWwfLxX5KLxTFIrA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vite: ^3 || ^4
+      webpack: ^5
+    peerDependenciesMeta:
+      vite:
+        optional: true
+      webpack:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.0.2
+      '@svgr-rs/core': 0.0.8
+      vite: 3.2.4_@types+node@20.1.3
+    transitivePeerDependencies:
+      - rollup
+    dev: true
+
   /@tailwindcss/typography/0.5.7_tailwindcss@3.1.8:
     resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
     peerDependencies:
@@ -846,6 +924,10 @@ packages:
 
   /@types/node/12.20.55:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
+    dev: true
+
+  /@types/node/20.1.3:
+    resolution: {integrity: sha512-NP2yfZpgmf2eDRPmgGq+fjGjSwFgYbihA8/gK+ey23qT9RkxsgNTZvGOEpXgzIGqesTYkElELLgtKoMQTys5vA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1025,7 +1107,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.18.6_@babel+core@7.18.13
       magic-string: 0.26.3
       react-refresh: 0.14.0
-      vite: 3.2.4
+      vite: 3.2.4_@types+node@20.1.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4880,7 +4962,7 @@ packages:
     dependencies:
       debug: 4.3.4
       react-dom: 18.2.0_react@18.2.0
-      vite: 3.2.4
+      vite: 3.2.4_@types+node@20.1.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4897,7 +4979,7 @@ packages:
       kolorist: 1.6.0
       sirv: 2.0.2
       ufo: 1.0.0
-      vite: 3.2.4
+      vite: 3.2.4_@types+node@20.1.3
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -4920,13 +5002,13 @@ packages:
       json5: 2.2.1
       local-pkg: 0.4.2
       picocolors: 1.0.0
-      vite: 3.2.4
+      vite: 3.2.4_@types+node@20.1.3
       yaml: 2.1.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/3.2.4:
+  /vite/3.2.4_@types+node@20.1.3:
     resolution: {integrity: sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4951,6 +5033,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.1.3
       esbuild: 0.15.15
       postcss: 8.4.19
       resolve: 1.22.1
