@@ -1,9 +1,10 @@
-import { defineConfig } from 'vite'
+import path from 'node:path'
+
 import react from '@vitejs/plugin-react'
-import pages from 'vite-plugin-pages'
+import { defineConfig } from 'vite'
 import { VitePluginDocument } from 'vite-plugin-document'
 import inspect from 'vite-plugin-inspect'
-import path from 'path'
+import pages from 'vite-plugin-pages'
 
 // https://vitejs.dev/config/
 export default defineConfig({

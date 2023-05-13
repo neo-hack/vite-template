@@ -2,40 +2,42 @@
  * refs: https://github.com/JiangWeixian/stitches.config/blob/master/tailwindcss/stitches.config.ts
  */
 import { createStitches, defaultThemeMap } from '@stitches/react'
-import type * as Stitches from '@stitches/react'
+
 import { colors } from './colors'
 
+import type * as Stitches from '@stitches/react'
+
 const space = {
-  '0': '0px',
-  '1': '0.25rem',
-  '2': '0.5rem',
-  '3': '0.75rem',
-  '4': '1rem',
-  '5': '1.25rem',
-  '6': '1.5rem',
-  '7': '1.75rem',
-  '8': '2rem',
-  '9': '2.25rem',
-  '10': '2.5rem',
-  '11': '2.75rem',
-  '12': '3rem',
-  '14': '3.5rem',
-  '16': '4rem',
-  '20': '5rem',
-  '24': '6rem',
-  '28': '7rem',
-  '32': '8rem',
-  '36': '9rem',
-  '40': '10rem',
-  '44': '11rem',
-  '48': '12rem',
-  '52': '13rem',
-  '56': '14rem',
-  '60': '15rem',
-  '64': '16rem',
-  '72': '18rem',
-  '80': '20rem',
-  '96': '24rem',
+  0: '0px',
+  1: '0.25rem',
+  2: '0.5rem',
+  3: '0.75rem',
+  4: '1rem',
+  5: '1.25rem',
+  6: '1.5rem',
+  7: '1.75rem',
+  8: '2rem',
+  9: '2.25rem',
+  10: '2.5rem',
+  11: '2.75rem',
+  12: '3rem',
+  14: '3.5rem',
+  16: '4rem',
+  20: '5rem',
+  24: '6rem',
+  28: '7rem',
+  32: '8rem',
+  36: '9rem',
+  40: '10rem',
+  44: '11rem',
+  48: '12rem',
+  52: '13rem',
+  56: '14rem',
+  60: '15rem',
+  64: '16rem',
+  72: '18rem',
+  80: '20rem',
+  96: '24rem',
   px: '1px',
   /**
    * `0.5` is not valid stitches token name
@@ -48,7 +50,7 @@ const space = {
 } as const
 
 const getTransition = (propertyValues: string[]) => {
-  return propertyValues.map((p) => `${p} cubic-bezier(0.4, 0, 0.2, 1) 150ms`).join(',')
+  return propertyValues.map(p => `${p} cubic-bezier(0.4, 0, 0.2, 1) 150ms`).join(',')
 }
 
 const stitches = createStitches({
@@ -139,14 +141,14 @@ const stitches = createStitches({
       '8xl': '1',
       '9xl': '1',
       // leading
-      '3': '.75rem',
-      '4': '1rem',
-      '5': '1.25rem',
-      '6': '1.5rem',
-      '7': '1.75rem',
-      '8': '2rem',
-      '9': '2.25rem',
-      '10': '2.5rem',
+      3: '.75rem',
+      4: '1rem',
+      5: '1.25rem',
+      6: '1.5rem',
+      7: '1.75rem',
+      8: '2rem',
+      9: '2.25rem',
+      10: '2.5rem',
       none: '1',
       tight: '1.25',
       snug: '1.375',
@@ -179,12 +181,12 @@ const stitches = createStitches({
       widest: '0.1em',
     },
     zIndices: {
-      '0': '0',
-      '10': '10',
-      '20': '20',
-      '30': '30',
-      '40': '40',
-      '50': '50',
+      0: '0',
+      10: '10',
+      20: '20',
+      30: '30',
+      40: '40',
+      50: '50',
       auto: 'auto',
     },
     shadows: {
