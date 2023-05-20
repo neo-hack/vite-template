@@ -1,3 +1,4 @@
+import { ReactComponent as ReactLogo } from '../assets/react.svg'
 
 const Home = () => {
   return (
@@ -9,7 +10,9 @@ const Home = () => {
           </pre>
         </div>
         <div>
-          <h1 className="text-5xl font-bold">Vite Template</h1>
+          <h1 className="flex text-5xl font-bold">
+            <ReactLogo />&nbsp;Vite Template
+          </h1>
           <div className="my-6 flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <i className="gg-check-o" />
@@ -21,7 +24,7 @@ const Home = () => {
             </div>
           </div>
           <button className="btn btn-primary">
-            <a href="https://reactjs.org/">Docs</a>
+            <a href="https://react.dev/">Docs</a>
           </button>
         </div>
       </div>
