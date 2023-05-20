@@ -1,5 +1,18 @@
 # @aiou/vite-template
 
+## 0.2.0
+
+### Minor Changes
+
+- afb0a5a: vite@4
+
+### Patch Changes
+
+- ac78edd: add tailwind-cssgg
+- afb0a5a: pin pnpm@7
+- afb0a5a: upgrade eslint & automatic-jsx
+- afb0a5a: add @svgr-rs/svgrs-plugin
+
 ## 0.1.2
 
 ### Patch Changes
