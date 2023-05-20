@@ -12,6 +12,7 @@
 - 📑 Use `document.tsx` as html template with [vite-plugin-document](https://github.com/JiangWeixian/vite-plugin-document)
 - 🔍 Inspect states of plugin with [vite-plugin-inspect](https://github.com/antfu/vite-plugin-inspect), enable via `process.env.VITE_INSPECT`. e.g. `VITE_INSPECT=true pnpm run dev`
 - 🎨 Use icon with [css.gg](https://css.gg) via [tailwind-cssgg](https://github.com/JiangWeixian/tailwind-cssgg). e.g. `<i className="gg-zeit" />`
+- 🥫 Process `.svg` with [svg-rust/svgrs-plugin](https://github.com/svg-rust/svgrs-plugin)
 
 ## development
 
