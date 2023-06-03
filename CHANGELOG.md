@@ -1,5 +1,11 @@
 # @aiou/vite-template
 
+## 0.2.1
+
+### Patch Changes
+
+- a4114be: upgrade svgrs-plugins@0.1.1
+
 ## 0.2.0
 
 ### Minor Changes
